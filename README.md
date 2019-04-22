@@ -5,6 +5,8 @@ Alfred workflow to get IP/Hostname based on input (IP/Hostname)
 
 Double click the workflow file found under releases to install Who.
 
+[Alfred.Who Releases](https://github.com/Rand-o/Alfred.Who/releases).
+
 ## Usage
 
 > who <IP/hostname>
