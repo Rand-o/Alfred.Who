@@ -17,14 +17,19 @@ def main(_):
 			arg=str(result),
 			valid=True,
 			)
-		wf.send_feedback()
-		return 0
+	except (socket.herror,socket.gaierror):
+		wf.add_item(
+			title="That doesn't look like a valid IP address.",
+			subtitle="Make sure you are on the right network!",
+			valid=True,
+			)
 	except Exception as e:
 		wf.add_item(
-			title="That doesn't look like a valid IP address (Make sure you are on VPN)",
+			title="Something went wrong.",
 			subtitle=str(e),
 			valid=True,
 			)
+	finally:
 		wf.send_feedback()
 		return 0
 
