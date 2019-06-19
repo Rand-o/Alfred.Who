@@ -19,7 +19,7 @@ def main(_):
 			)
 	except (socket.herror,socket.gaierror):
 		wf.add_item(
-			title="That doesn't look like a valid IP address.",
+			title="That doesn't look like a valid address.",
 			subtitle="Make sure you are on the right network!",
 			valid=True,
 			)
